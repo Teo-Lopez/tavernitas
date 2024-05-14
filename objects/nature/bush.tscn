@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckay447fvjmws"]
+
+[ext_resource type="Texture2D" uid="uid://uo4csit1pjkx" path="res://assets/nature/bushes/base/Bush_orange_flowers1.png" id="1_x0wxl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iftcv"]
+size = Vector2(35, 36)
+
+[node name="bush" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_x0wxl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_iftcv")
